@@ -5,9 +5,13 @@ import { Header } from 'components/theme';
 import { Container, Button } from 'components/common';
 import dev from 'assets/illustrations/dev.svg';
 import { Wrapper, IntroWrapper, Details, Thumbnail } from './styles';
+import styled from 'styled-components'
+import Pdf from '../../../assets/resource/resume.pdf'
 
 export const Intro = () => {
   const { theme } = useContext(ThemeContext);
+
+  console.log('pdf: 123' , Pdf)
 
   return (
     <Wrapper>
@@ -15,9 +19,11 @@ export const Intro = () => {
       <IntroWrapper as={Container}>
         <Details theme={theme}>
           <h1>Hi There!</h1>
-          <h4>I’m Dev Arora a Full Stack engineer and machine learning enthusiast!</h4>
-          <Button as={AnchorLink} href="#contact">
-            Hire me
+          <h4>I’m Dev Arora a Full Stack engineer and machine learning enthusiast !</h4>
+          <Button>
+            <A href={Pdf} download>
+              Download CV
+                 </A>
           </Button>
         </Details>
         <Thumbnail>
@@ -27,3 +33,9 @@ export const Intro = () => {
     </Wrapper>
   );
 };
+
+
+const A = styled.a`
+  text-decoration: none;
+  color: inherit;
+`;

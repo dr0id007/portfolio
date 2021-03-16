@@ -1,13 +1,17 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import axios from 'axios';
 import { Formik, Form, FastField, ErrorMessage } from 'formik';
 import Recaptcha from 'react-google-recaptcha';
 import * as Yup from 'yup';
 import { Button, Input } from 'components/common';
-import { Error, Center, InputField } from './styles';
+import { Error, Center, InputField , Details } from './styles';
+import { ThemeContext } from 'providers/ThemeProvider';
 
-export default () => (
-  <Formik
+
+export default () => {
+  const { theme } = useContext(ThemeContext);
+
+  return <Formik
     initialValues={{
       name: '',
       email: '',
@@ -43,12 +47,14 @@ export default () => (
       } catch (err) {
         setSubmitting(false);
         setFieldValue('success', false);
-				alert('Something went wrong, please try again!') // eslint-disable-line
+        alert('Something went wrong, please try again!') // eslint-disable-line
       }
     }}
   >
     {({ values, touched, errors, setFieldValue, isSubmitting }) => (
       <Form>
+        <Details theme={theme}>
+        <h1>Contact</h1>
         <InputField>
           <Input
             as={FastField}
@@ -110,8 +116,9 @@ export default () => (
           <Button secondary type="submit" disabled={isSubmitting}>
             Submit
           </Button>
-        </Center>
+          </Center>
+          </Details>
       </Form>
     )}
   </Formik>
-);
+};

@@ -41,10 +41,10 @@ export const Projects = () => {
 
   return (
     <Wrapper as={Container} id="projects">
-      <h2>Projects</h2>
+      <h1>Projects</h1>
       <Grid>
         {projectList.map((data, index) => {
-          return <Project title={data.title} img={data.img} href={data.href}/>
+          return <Project key={index} title={data.title} img={data.img} href={data.href}/>
         })}        
       </Grid>
     </Wrapper>
