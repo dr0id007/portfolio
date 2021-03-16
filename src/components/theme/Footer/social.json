@@ -1,7 +1,7 @@
 [
   {
     "id": 0,
-    "name": "LinkedIn",
+    "name": "Telegram",
     "link": "https://t.me/dr0id007",
     "icon": "/icons/telegram.svg"
   },
@@ -10,5 +10,11 @@
     "name": "Github",
     "link": "https://github.com/dr0id007",
     "icon": "/icons/github.svg"
+  },
+  {
+    "id": 1,
+    "name": "LinkedIn",
+    "link": "https://github.com/dr0id007",
+    "icon": "/icons/linkedin.svg"
   }
 ]

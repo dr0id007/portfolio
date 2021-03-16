@@ -17,7 +17,7 @@ export const Footer = () => (
       </Details>
       <Links>
         {social.map(({ id, name, link, icon }) => (
-          <a style={{marginRight: '10px'}} key={id} href={link} target="_blank" rel="noopener noreferrer" aria-label={`follow me on ${name}`}>
+          <a style={{marginRight: '10px' , marginLeft: '10px'}} key={id} href={link} target="_blank" rel="noopener noreferrer" aria-label={`follow me on ${name}`}>
             <img width="24" src={icon} alt={name} />
           </a>
         ))}
