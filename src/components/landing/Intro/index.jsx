@@ -21,7 +21,7 @@ export const Intro = () => {
           <h1>Hi There!</h1>
           <h4>I’m Dev Arora a Full Stack engineer and machine learning enthusiast !</h4>
           <Button>
-            <A href={Pdf} download>
+            <A href={Pdf} target="_blank">
               Download CV
                  </A>
           </Button>
