@@ -10,21 +10,21 @@ export const Projects = () => {
   const { theme } = useContext(ThemeContext);
   const projectList = [{  
     title: 'Moni.pe',
-    img: require('./images/moni-pe.png').default,
+    img: require('../../../../public/images/whiteboard.png').default,
     desc: 'Crypto-currency exchange web site',
     tech: '',
     href:'https://moni-front.netlify.app/'
   },
     {
     title: 'E-commerce store',
-    img: require('./images/store.png').default,
+    img: require('../../../../public/images/whiteboard.png').default,
     desc: '',
     tech: '',
     href:'https://mern-store-template.herokuapp.com/'
     },
     {
       title: 'Collaborative Whiteboard',
-      img: require('./images/whiteboard.png').default,
+      img: require('../../../../public/images/whiteboard.png').default,
       desc: '',
       tech: '',
       href:'https://learn-in-fun.herokuapp.com/'
