@@ -3,10 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "description": "portfolio",
-  "author": "dr0id",
-  "keywords": [
-    "gatsby"
-  ],
+  "author": "Dev Arora",
   "scripts": {
     "develop": "gatsby develop",
     "start": "gatsby develop",
@@ -15,8 +12,28 @@
     "clean": "gatsby clean"
   },
   "dependencies": {
+    "axios": "^1.7.2",
+    "dotenv": "^16.4.5",
+    "formik": "^2.4.6",
     "gatsby": "^5.13.5",
+    "gatsby-image": "^3.11.0",
+    "gatsby-plugin-canonical-urls": "^5.13.1",
+    "gatsby-plugin-google-analytics": "^5.13.1",
+    "gatsby-plugin-manifest": "^5.13.1",
+    "gatsby-plugin-nprogress": "^5.13.1",
+    "gatsby-plugin-offline": "^6.13.2",
+    "gatsby-plugin-react-helmet": "^6.13.1",
+    "gatsby-plugin-sitemap": "^6.13.1",
+    "gatsby-plugin-styled-components": "^6.13.1",
+    "gatsby-source-filesystem": "^5.13.1",
+    "gatsby-transformer-sharp": "^5.13.1",
+    "prop-types": "^15.8.1",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-anchor-link-smooth-scroll": "^1.0.12",
+    "react-dom": "^18.2.0",
+    "react-google-recaptcha": "^3.1.0",
+    "react-helmet": "^6.1.0",
+    "styled-components": "^6.1.11",
+    "yup": "^1.4.0"
   }
 }
