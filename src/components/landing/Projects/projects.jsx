@@ -15,6 +15,7 @@ const projects = ({ title, desc, img , href }) => {
 const Project = styled.a`
     text-decoration: none;
     color: inherit;
+    text-align:center;
 `;
 
 

@@ -1,12 +1,14 @@
-import styled from 'styled-components';
+import styled from 'styled-components'
 
 export const Wrapper = styled.div`
+  margin-top: 10rem;
   padding: 2rem 0;
-`;
+`
 
 export const Grid = styled.div`
   display: grid;
   align-items: center;
+  margin-top: 3rem;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 8fr;
   gap: 1.2rem 1.2rem;
@@ -18,7 +20,7 @@ export const Grid = styled.div`
   @media (max-width: 680px) {
     grid-template-columns: 1fr;
   }
-`;
+`
 
 export const Item = styled.div`
   width: 100%;
@@ -33,12 +35,12 @@ export const Item = styled.div`
   p {
     color: ${({ theme }) => (theme === 'light' ? '#707070' : '#c7c7c7')};
   }
-`;
+`
 
 export const Content = styled.div`
   padding: 1rem 0;
   min-height: 160px;
-`;
+`
 
 export const Stats = styled.div`
   display: flex;
@@ -63,9 +65,9 @@ export const Stats = styled.div`
       margin-left: 0.5rem;
     }
   }
-`;
+`
 
 export const Languages = styled.div`
   opacity: 0.5;
   font-size: 14px;
-`;
+`

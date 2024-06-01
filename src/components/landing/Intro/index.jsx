@@ -6,7 +6,7 @@ import { Container, Button } from 'components/common';
 import dev from '../../../assets/illustrations/dev.svg';
 import { Wrapper, IntroWrapper, Details, Thumbnail } from './styles';
 import styled from 'styled-components'
-import Pdf from '../../../assets/resource/resume.pdf'
+import Pdf from '../../../assets/resource/Dev_Arora_Resume.pdf'
 
 export const Intro = () => {
   const { theme } = useContext(ThemeContext);
