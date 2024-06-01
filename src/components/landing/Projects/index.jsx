@@ -1,30 +1,31 @@
 import React, { useContext } from 'react';
 import { ThemeContext } from 'providers/ThemeProvider';
-import { Container, Card, TitleWrap } from 'components/common';
-import Star from 'components/common/Icons/Star';
-import Fork from 'components/common/Icons/Fork';
-import { Wrapper, Grid, Item, Content, Stats, Languages } from './styles';
+import { Container } from 'components/common';
+import { Wrapper, Grid } from './styles';
 import Project from './projects'
+import MoniImage from '../../../../public/images/moni-pe.png'
+import StoreImage from '../../../../public/images/store.png'
+import WhiteboardImage from '../../../../public/images/whiteboard.png'
 
 export const Projects = () => {
   const { theme } = useContext(ThemeContext);
   const projectList = [{  
     title: 'Moni.pe',
-    img: require('/images/whiteboard.png').default,
+    img: MoniImage,
     desc: 'Crypto-currency exchange web site',
     tech: '',
     href:'https://moni-front.netlify.app/'
   },
     {
     title: 'E-commerce store',
-    img: require('/images/whiteboard.png').default,
+    img: StoreImage,
     desc: '',
     tech: '',
     href:'https://mern-store-template.herokuapp.com/'
     },
     {
       title: 'Collaborative Whiteboard',
-      img: require('/images/whiteboard.png').default,
+      img: WhiteboardImage,
       desc: '',
       tech: '',
       href:'https://learn-in-fun.herokuapp.com/'
