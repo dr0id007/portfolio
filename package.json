@@ -5,9 +5,9 @@
   "version": "0.1.2",
   "author": "Dev Arora",
   "engines": {
-    "node": "12.x",
-    "npm": "6.x"
-   },
+    "node": "20.x",
+    "npm": "10.x"
+  },
   "dependencies": {
     "axios": "^0.21.1",
     "dotenv": "^6.2.0",
